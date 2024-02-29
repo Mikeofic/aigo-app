@@ -1,10 +1,12 @@
 <template>
   <div class="container">
-    <h1>Home</h1>
+    <CardList />
   </div>
 </template>
 
 <script setup>
+import CardList from '../organism/CardList.vue';
+
 
 </script>
 
