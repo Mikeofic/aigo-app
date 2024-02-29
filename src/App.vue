@@ -27,7 +27,7 @@ import TheFooter from './components/molecule/TheFooter.vue';
 
 header {
   grid-area: header;
-  background-color: #333;
+  background-color: var(--grey-400);
   box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.5);
   color: white;
   padding: 1rem;
@@ -35,7 +35,7 @@ header {
 
 aside {
   grid-area: aside;
-  background-color: #ddd;
+  background-color: var(--grey-100);
   padding: 1rem;
   box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.5);
 }
@@ -47,7 +47,7 @@ main {
 
 footer {
   grid-area: footer;
-  background-color: #333;
+  background-color: var(--grey-400);
   color: white;
   padding: 1rem;
 }
@@ -58,7 +58,7 @@ footer {
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: rgb(179, 235, 235);
+  background-color: var(--grey-100);
 
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -81,5 +81,13 @@ a, li, ol {
 }
 
 body {
+}
+
+:root {
+  --grey-100: #F2F2F2;
+  --grey-200: #A6A6A6;
+  --grey-300: #595959;
+  --grey-400: #262626;
+  --grey-500: #0D0D0D;
 }
 </style>
